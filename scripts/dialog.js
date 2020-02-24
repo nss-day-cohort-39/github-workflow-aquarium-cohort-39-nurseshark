@@ -50,6 +50,14 @@ const initializeDetailButtonEvents = () => {
         }
     )
 
+    document.querySelector("#button--spikey").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--spikey")
+            theDialog.showModal()
+        }
+        )
+
     // Show Nurse Joy's details when the button is clicked
     document.querySelector("#button--joy").addEventListener(
         "click",
