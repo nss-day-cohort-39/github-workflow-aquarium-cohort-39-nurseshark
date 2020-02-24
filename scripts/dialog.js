@@ -49,6 +49,14 @@ const initializeDetailButtonEvents = () => {
             theDialog.showModal()
         }
     )
+
+    document.querySelector("#button--spikey").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--spikey")
+            theDialog.showModal()
+        }
+    )
 }
 
 export default initializeDetailButtonEvents
